@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>UI with Buttons and Search</title>
+ <style>
+  .button-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   margin: 20px;
+  }
+  
+  .button {
+   display: inline-block;
+   padding: 10px;
+   margin: 10px;
+   background-color: #4CAF50;
+   color: white;
+   text-align: center;
+   font-size: 18px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+   background-color: #3e8e41;
+  }
+  
+  .search-container {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   margin: 20px;
+  }
+  
+  .search-input {
+   flex-grow: 1;
+   padding: 10px;
+   font-size: 18px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   outline: none;
+  }
+  
+  .search-button {
+   padding: 10px;
+   background-color: #4CAF50;
+   color: white;
+   font-size: 18px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+  }
+  
+  .search-button:hover {
+   background-color: #3e8e41;
+  }
+ </style>
+</head>
+<body>
+ <div class="button-container">
+  <button class="button">Create User</button>
+  <button class="button">Show User</button>
+  <button class="button">Delete User</button>
+  <button class="button">Update User</button>
+ </div>
+ 
+ <div class="search-container">
+  <input class="search-input" type="text" placeholder="Search...">
+  <button class="search-button">Search</button>
+ </div>
+</body>
+</html>
